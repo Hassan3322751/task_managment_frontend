@@ -1,3 +1,22 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom background gradient (light pink-red like image) */
+body {
+  @apply bg-gradient-to-br from-pink-50 via-rose-50 to-red-50 min-h-screen;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Optional: smooth scroll & better defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  @apply box-border;
+}
 .App {
   text-align: center;
 }
