@@ -112,8 +112,11 @@ const Dashboard = ({ isVital = false }) => {
         open={openForm}
         task={editingTask}
         onClose={() => setOpenForm(false)}
-        onSuccess={() => { setOpenForm(false); }}
-      />
+        onSuccess={() => { 
+          setOpenForm(false); 
+          fetchDashboard(); 
+        }}
+    />
     </Box>
     </>
   );
