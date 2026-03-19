@@ -1,7 +1,8 @@
 import axios from "axios";
 
+const url = process.env.NODE_ENV == 'development' ? "http://localhost:8080/api" : 'https://task-managment-api-psi.vercel.app/api'
 const apiInstance = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: url,
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
